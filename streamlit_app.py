@@ -53,13 +53,14 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-st.title("days until i see siddy again 🔥")
+# st.title("days until i see siddy again 🔥")
 
 # Create a placeholder for the countdown
 placeholder = st.empty()
 
 # Display the countdown and image centered
 with st.container() as main_container:
+    st.title("days until i see siddy again 🔥")
 
     st.markdown('<div class="center">', unsafe_allow_html=True)
     st.markdown('<div class="image-container">', unsafe_allow_html=True)
