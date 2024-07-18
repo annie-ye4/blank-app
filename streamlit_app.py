@@ -53,7 +53,7 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-st.title("days until i can see siddy again 🔥")
+st.title("days until i see siddy again 🔥")
 
 # Create a placeholder for the countdown
 placeholder = st.empty()
