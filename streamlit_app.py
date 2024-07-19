@@ -2,6 +2,8 @@ import streamlit as st
 from datetime import datetime, timedelta
 import time
 
+st.set_page_config(page_title="siddy countdown", page_icon=":smiley:")
+
 # Set the target date for the countdown
 target_date = datetime(2024, 8, 26)
 
