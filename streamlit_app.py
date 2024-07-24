@@ -1,11 +1,15 @@
 import streamlit as st
 from datetime import datetime, timedelta
 import time
+from datetime import timedelta
+import pytz
 
 st.set_page_config(page_title="siddy countdown", page_icon=":smiley:")
 
 # Set the target date for the countdown
-target_date = datetime(2024, 7, 25, 26, 30)
+target_date = datetime(2024, 7, 25, 22, 30, 0, 0)
+ny_tz = pytz.timezone("America/New_York")
+
 
 def get_time_remaining(target_date):
     now = datetime.now()
