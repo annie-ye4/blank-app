@@ -31,7 +31,7 @@ st.markdown(
         padding: 20px;
         border-radius: 10px;
         color: black;
-        width: 40vh;
+        width: 45vh;
         margin: auto;
     }
     .center {
