@@ -5,7 +5,7 @@ import time
 st.set_page_config(page_title="siddy countdown", page_icon=":smiley:")
 
 # Set the target date for the countdown
-target_date = datetime(2024, 7, 25, 22, 30)
+target_date = datetime(2024, 7, 25, 26, 30)
 
 def get_time_remaining(target_date):
     now = datetime.now()
