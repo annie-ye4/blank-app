@@ -7,16 +7,22 @@ import pytz
 st.set_page_config(page_title="siddy countdown", page_icon=":smiley:")
 
 # Set the target date for the countdown
-target_date = datetime(2024, 7, 25, 22, 30, 0, 0)
 ny_tz = pytz.timezone("America/New_York")
+target_date = ny_tz.localize(datetime(2024, 7, 25, 22, 30, 0, 0))
 
 
 def get_time_remaining(target_date):
-    now = datetime.now()
+    # Ensure now is timezone-aware in the same timezone as target_date
+    now = datetime.now(target_date.tzinfo)
+    
+    # Calculate the time difference
     time_remaining = target_date - now
+    
+    # Calculate the number of days, hours, minutes, and seconds
     days = time_remaining.days
     hours, remainder = divmod(time_remaining.seconds, 3600)
     minutes, seconds = divmod(remainder, 60)
+    
     return days, hours, minutes, seconds
 
 st.markdown(
