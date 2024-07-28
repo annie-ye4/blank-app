@@ -32,14 +32,14 @@ st.markdown(
         margin-top: 60px;
     }
     .countdown-box {
-        font-size:30px !important;
+        font-size:27px !important;
         text-align: center;
         background-color: #f0f8ff;
         border: 2px solid #87ceeb;
         padding: 20px;
         border-radius: 10px;
         color: black;
-        width: 50vh;
+        width: 45vh;
         margin: auto;
     }
     .center {
