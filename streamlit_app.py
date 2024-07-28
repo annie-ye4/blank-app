@@ -7,7 +7,7 @@ st.set_page_config(page_title="siddy countdown", page_icon=":smiley:")
 
 # Set the target date for the countdown
 ny_tz = pytz.timezone("America/New_York")
-target_date = ny_tz.localize(datetime(2024, 7, 25, 22, 30, 0, 0))
+target_date = ny_tz.localize(datetime(2024, 8, 26, 10, 0, 0, 0))
 
 def get_time_remaining(target_date):
     # Ensure now is timezone-aware in the same timezone as target_date
